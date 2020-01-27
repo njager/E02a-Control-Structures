@@ -14,39 +14,66 @@ Comments in Python are marked by a # sign (for single-line comments) or three ma
 Edit README.md to answer the following questions:
 
 - Open main01.py. Before running it, what do you expect this program to do?
+ Accept an input and do nothing.
   - Now right click on the main1.py window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened.
+The file stopped running after the input was given.
   - What do you think the program did with what you typed in answer to the question?
+  There was no programmed response to the input.
 - Open main02.py. Before running it, describe how this is different than main01.py.
+There is a line of code after the input line.
   - What do you think the color = input() will do?
+  Set the variable "color" equal to the input provided.
   - Run the program in the terminal and answer the question. Did the program do what you expected?
+  Yes.
 - Open main03.py. Before running it, describe how this is different than main02.py.
+This file introduces an if and else structure
   - What is happening on lines 9–12?
+ The program provides a response to a certain input and a different response to all other inputs.
   - Why are lines 10 and 12 indented?
+  They detail what occurs as a result if the previous line runs and is true.
   - Run the program and answer the question. What happens if you don’t capitalize Red?
+  It treats red as any other input that is not Red.
   - What does this tell you about "color"?
+  "Color" is case-sensitive
 - Open main04.py. Before running it, describe how this is different than main03.py.
+It allows for two options, a first letter capitalized and a lowercase version of "red" to be accepted in the if statement.
   - What problem is this trying to solve?
+  The case-sensitivity of the variable.
   - Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
+  The program still treats those answers as "else" answers.
 - Open main05.py. What do you expect line 9 to do?
+Convert the input to all lowercase.
   - What problem is it trying to solve?
+  The case-sensitivity of the variable.
   - Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “ RED “ or “ red”)?
+  Answers with spaces are treated as any other else input.
  - Open main06.py. How is line 9 different than in main05.py?
+ It adds the strip fuction.
    - What would you guess .strip() is doing?
+   It deletes spaces before and after the input.
    - Run the program and answer the question. Is there another way of writing “red” that will break this logic?
+   No
  - Open main07.py. Before running this program, how do you expect this to be different than main06.py?
+ There is a new possible unique response, in this case to the input "pink"
    - What is happening on line 12?
+   An else if statement
    - Run the program and answer the question.
  - Open main08.py. What is the purpose of line 9?
    - Why are lines 10–17 indented?
+   They are included within the while loop
    - Run the program. What would happen if line 10 were moved before line 9 (and no longer indented)?
+   The input would not generate a response if the if or elif statements are made true, and if the else statement is activated it will repeatedly print the print statement.
    - Make that change and run the program again. (To end any Python program, you can type ctrl-c)
  - Open main09.py. What is happening on line 13?
+ It introduces a new integer variable that adds 1 to itself each recurrence of the loop.
    - What is the purpose of “count”?
+  To keep track of how many times the loops occurs.
    - What is happening on line 22?
+   There is no line 22. Line 21, however, reports the count variable value to the user.
    - Run the program.
  - *Extra credit:* open main10.py. Add a comment to each line describing what it is doing (a comment follows a pound sign [#]).
  - *Extra credit:* open main11.py. What is happening on lines 6-11?
-  
+ Lines 6-11 create the function choose_color and set 'last_color' as the parameter defined within the function. The variable c is set equal to a random choice from the colors and while the parameter last_color is equal to this random choice the function returns the color.
 Commit your changes and push them back to the repository.
  
 
